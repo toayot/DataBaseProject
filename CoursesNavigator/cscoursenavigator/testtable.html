@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-sdfv{background-color:#a0c3e2;border-color:#333333;text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:center;vertical-align:top}
+</style>
+<form>
+  <table class="tg">
+  <tr>
+    <th class="tg-sdfv">ยังไม่เรียน</th>
+    <th class="tg-sdfv">เรียนแล้ว (โปรดระบุเกรด)</th>
+    <th class="tg-sdfv">ถอนวิชานี้ (ติด W)</th>
+    <th class="tg-sdfv">รหัสวิชา</th>
+    <th class="tg-sdfv">ชื่อวิชา</th>
+  </tr>
+  <tr>
+    <td class="tg-0pky">
+    <label> <input type="radio" name="studycheck1" value="0" checked="checked"></label>
+    </td>
+    <td class="tg-0pky"><input type="radio" id="last" name="studycheck1" value="1">
+
+  <select id="sub1" value="" onchange="radioCheck(this);">
+    <option value="">โปรดะบุ</option>
+    <option value="4">A</option>
+    <option value="3.5">B+</option>
+    <option value="3">B</option>
+    <option value="2.5">C+</option>
+    <option value="2">C</option>
+    <option value="1.5">D+</option>
+    <option value="1">D</option>
+    <option value="0">F</option>
+  </select></td>
+    <td class="tg-0pky">
+    <label> <input type="radio" name="studycheck1" value="2" checked="checked"></label>
+    </td>
+    <td class="tg-0pky">TU100</td>
+    <td class="tg-0pky">พลเมืองกับการลงมือแก้ปัญหา</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">
+    <label> <input type="radio" name="studycheck2" value="0" checked="checked"></label>
+    </td>
+    <td class="tg-0pky"><input type="radio" id="last2" name="studycheck2" value="1">
+
+  <select id="sub2" value="" onchange="radioCheck(this);">
+    <option value="">โปรดะบุ</option>
+    <option value="4">A</option>
+    <option value="3.5">B+</option>
+    <option value="3">B</option>
+    <option value="2.5">C+</option>
+    <option value="2">C</option>
+    <option value="1.5">D+</option>
+    <option value="1">D</option>
+    <option value="0">F</option>
+  </select></td>
+    <td class="tg-0pky">
+    <label> <input type="radio" name="studycheck2" value="2" checked="checked"></label>
+    </td>
+    <td class="tg-0pky">CS101</td>
+    <td class="tg-0pky">โครงสร้างแบบไม่ต่อเนื่อง (บังคับร่วม)</td>
+  </tr>
+</table>
+<button>sum</button>
+</form>
+
+<script>var radioAll = document.querySelectorAll('[type=radio]');
+    radioAll.forEach(function(r){
+      r.onclick = function(){
+        var ddAll = document.querySelectorAll('select');
+        ddAll.forEach(function(s){
+          s.selectedIndex = 0;
+        }); 
+      }
+    });
+    
+    
+    function radioCheck(el) {
+      var input = el.parentNode.querySelector('[name=studycheck]');
+      input.checked = "checked";
+    }
+    </script>
+
+</body>
+</html>

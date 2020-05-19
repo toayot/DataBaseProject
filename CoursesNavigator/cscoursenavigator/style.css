@@ -1,0 +1,176 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: "Sarabun";
+}
+
+.banner-image {
+    background-image:  url("banner1.png");
+    height: 25%;
+    position: relative;
+    z-index: 1;
+}
+ul
+{
+    margin: 0;
+    padding: 0;
+}
+li
+{
+    list-style:none;
+}
+a
+{
+    text-decoration:none;
+}
+/*#menu
+{
+    width:10%;
+    position: fixed;
+    float:left;
+    background-color: rgb(93, 200, 236);
+    border: 1px solid #000;
+
+}
+.cl-menu li
+{
+    position: relative;
+}
+.cl-menu > li:hover
+{
+    font-weight:bold;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.cl-menu li:hover
+{
+    background-color:rgb(113, 207, 238);
+}
+
+.cl-menu li a
+{
+    display: block;
+    min-width: 150px;
+    padding: 10px;
+    color:rgb(0, 0, 0);
+}
+
+.cl-menu li:hover a
+{
+    color:#111;
+
+}
+
+.cl-menu li ul
+{
+    position: absolute;
+    top: -150%;
+    left: 100%;
+    border: 1px solid #000;
+
+    border-radius: 5px;
+    display:none;
+}
+
+.cl-menu li:hover > ul
+{
+    display:block;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+.cl-menu li ul li
+{
+    background: rgb(194, 235, 249);
+    border-bottom:1px solid #000;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+}
+
+.cl-menu li ul li:last-child
+{
+    border-bottom: none;
+}*/
+.colorgraph {
+    height: 5px;
+    border-top: 0;
+    background: #c4e17f;
+    border-radius: 5px;
+    background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+    background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+    background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+    background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+
+.colorbarregis {
+    height: 5px;
+    border-top: 0;
+    background: #62c2e4;
+    border-radius: 5px;
+  }
+
+  /* Fixed sidenav, full height */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position:fixed;
+    overflow:hidden;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    background-color: rgb(194, 235, 249);
+    padding-top: 20px;
+
+  }
+  
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    background-color: rgb(93, 200, 236);
+    color: #f1f1f1;
+  }
+  
+  /* Main content */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: rgb(93, 200, 236);
+    color: white;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: rgb(194, 235, 249);
+    padding-left: 8px;
+
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
